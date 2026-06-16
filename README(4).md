@@ -36,22 +36,6 @@ Arduino MEGA 2560을 기반으로 컨베이어 모터, 적외선 센서, 서보�
 
 ---
 
-## 하드웨어 구성
-
-| 부품 | 역할 |
-|---|---|
-| Arduino MEGA 2560 | 센서 입력, 모터 및 전체 하드웨어 제어 |
-| DC Motor | 컨베이어 벨트 구동 |
-| Motor Driver | DC 모터의 속도와 방향 제어 |
-| IR Sensor | 전자부품 위치와 검사 위치 도착 여부 감지 |
-| Servo Motor | 검사 결과에 따른 전자부품 분류 |
-| Emergency Stop Button | 비상 상황에서 전체 장비 정지 |
-| Buzzer | 비상정지 및 이상 상태 알림 |
-| DHT22 | 장비 주변 온도 측정 |
-| Battery Pack | 모터와 구동부 전원 공급 |
-
----
-
 ## 주요 제어 기능
 
 ### 컨베이어 모터 제어
@@ -131,20 +115,7 @@ Arduino와 PC 간 데이터는 JSON 형식으로 구성했습니다.
 - DHT22 온도 센서 연결 및 측정값 전송
 - PC와 Arduino 사이의 JSON 기반 시리얼 통신 구현
 - 전체 하드웨어 통합, 반복 동작 테스트 및 오류 수정
+- 전체 발표자료 제작
 
 ---
 
-## 저장소 구성
-
-```text
-smart-manufacturing-hardware
-├── Communication.ino
-├── ConveyorControl.ino
-├── EmergencyStop.ino
-├── README.md
-├── ServoControl.ino
-├── manufacturing_hardware.ino
-└── docs
-    └── circuit
-        └── hardware_circuit.png
-```
